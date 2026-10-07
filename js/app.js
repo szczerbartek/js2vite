@@ -12,9 +12,20 @@ const seats = 12;
 let slogan;
 let course;
 let enrolled = 8;
+let language = (seats < 12) ? 'JavaScript' : ((seats < 10) ? 'TypeScript' : 'Node.JS');
+console.log(language);
 
+
+if (seats <= 12)
+{
+    console.log("wszyscy obecni");
+}
+else if(seats  < 10)
+{
+    console.log("wolne miejsca na: ${language} ")
+}
 console.log(title + ': wolne ' +  (seats - enrolled) + ' z ' + seats);
-console.log('${title}: wolne ${(seats-enrolled)} z ${seats}');
+console.log(` ${title} : wolne ${(seats-enrolled)} z ${seats}`);
 // console.log(typeof title);
 // console.log(typeof seats);
 // console.log(typeof slogan);
