@@ -11,10 +11,12 @@ const title = "Kurs JavaScript";
 const seats = 12;
 let slogan;
 let course;
-let enrolled = 12;
+let enrolled = 8;
 
-console.log(typeof title);
-console.log(typeof seats);
-console.log(typeof slogan);
-console.log(typeof course);
-console.log(typeof enrolled);
+console.log(title + ': wolne ' +  (seats - enrolled) + ' z ' + seats);
+console.log('${title}: wolne ${(seats-enrolled)} z ${seats}');
+// console.log(typeof title);
+// console.log(typeof seats);
+// console.log(typeof slogan);
+// console.log(typeof course);
+// console.log(typeof enrolled);
